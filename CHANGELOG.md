@@ -1,3 +1,5 @@
+## [1.26.4] - [Jan 6, 2023]
+* Minor bug fix
 ## [1.26.3] - [Jan 6, 2023]
 * Updates for pub.dev analysis issues
 ## [1.26.2] - [Jan 6, 2023]
