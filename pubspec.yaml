@@ -1,0 +1,23 @@
+name: k8s
+version: 1.27.0+1
+description: Kubernetes API client library for Dart.
+homepage: https://github.com/fatihsever/kubernetes-dart
+publish_to: none
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+
+dependencies:
+  collection: ^1.17.1
+  dio: "^5.0.0"
+  json_annotation: ^4.8.0
+  kubeconfig: ^1.0.0+1
+  logging: ^1.1.1
+  path: ^1.8.3
+  socks5_proxy: ^1.0.3+dev.3
+
+dev_dependencies:
+  build_runner: any
+  json_serializable: ^6.6.1
+  test: ^1.16.0
+  very_good_analysis: ^4.0.0+1

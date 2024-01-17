@@ -1,0 +1,43 @@
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/*
+
+# Idea related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Files and directories created by pub.
+.dart_tool/
+.packages
+
+# Conventional directory for build outputs.
+build/
+
+# Omit committing pubspec.lock for library packages; see
+# https://dart.dev/guides/libraries/private-files#pubspeclock.
+pubspec.lock
+
+# Ignore pubspec_overrides.yaml as local package paths may be different for everyone
+pubspec_overrides.yaml
+
+# Test and Coverage generated outputs
+coverage/
+
+# # Generated dart files
+# *.g.dart
