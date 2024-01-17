@@ -2,7 +2,9 @@ name: k8s
 version: 1.27.0+1
 description: Kubernetes API client library for Dart.
 homepage: https://github.com/fatihsever/kubernetes-dart
-publish_to: none
+repository: https://github.com/fatihsever/k8s-dart
+issue_tracker: https://github.com/fatihsever/k8s-dart/issues
+documentation: https://fatihsever.github.io/k8s-dart
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
