@@ -4,7 +4,7 @@ description: Kubernetes API client library for Dart.
 homepage: https://github.com/fatihsever/kubernetes-dart
 repository: https://github.com/fatihsever/k8s-dart
 issue_tracker: https://github.com/fatihsever/k8s-dart/issues
-documentation: https://fatihsever.github.io/k8s-dart
+documentation: https://k8s.pages.dev/
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
@@ -23,3 +23,8 @@ dev_dependencies:
   json_serializable: ^6.6.1
   test: ^1.16.0
   very_good_analysis: ^4.0.0+1
+
+screenshots:
+  - description: Kubernetes Client for Dart logo
+    path: assets/logo.webp
+
