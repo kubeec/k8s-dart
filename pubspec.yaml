@@ -13,7 +13,7 @@ dependencies:
   collection: ^1.17.1
   dio: "^5.0.0"
   json_annotation: ^4.8.0
-  kubeconfig: ^1.0.0+1
+  kubeconfig: ^1.0.1
   logging: ^1.1.1
   path: ^1.8.3
   socks5_proxy: ^1.0.3+dev.3
