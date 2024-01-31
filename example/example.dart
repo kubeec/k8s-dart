@@ -27,7 +27,7 @@ Future<void> main(List<String> args) async {
     );
     existingDeployment = response3.data;
     print('Deployment UID: ${response3.data?.metadata!.uid}');
-  } on DioError {
+  } on DioException {
     print('nginx-example deployment not found');
   }
 

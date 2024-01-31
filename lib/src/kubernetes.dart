@@ -18,7 +18,7 @@ import 'package:socks5_proxy/socks_client.dart';
 
 /// {@template kubernetes}
 /// Kubernetes
-/// {@kubernetes}
+/// {@endtemplate}
 class Kubernetes {
   /// @macro kubernetes
   Kubernetes({
@@ -141,7 +141,7 @@ class Kubernetes {
             insecureSkipTlsVerify: false,
             certificateAuthority: serviceAccountCaPath,
           ),
-        )
+        ),
       ],
       contexts: [
         NamedContext(
@@ -151,7 +151,7 @@ class Kubernetes {
             authInfo: 'k8s',
             namespace: namespace,
           ),
-        )
+        ),
       ],
       authInfos: const [
         NamedAuthInfo(
@@ -159,7 +159,7 @@ class Kubernetes {
           user: AuthInfo(
             tokenFile: serviceAccountTokenPath,
           ),
-        )
+        ),
       ],
       currentContext: 'k8s',
     );
@@ -237,11 +237,12 @@ class Kubernetes {
       }
     }
 
-    final dio = Dio(options);
-
-    (dio.httpClientAdapter as IOHttpClientAdapter).onHttpClientCreate = (c) {
-      return httpClient;
-    };
+    final dio = Dio(options)
+      ..httpClientAdapter = IOHttpClientAdapter(
+        createHttpClient: () {
+          return httpClient;
+        },
+      );
 
     final interceptors = [
       BasicAuthInterceptor(),
@@ -262,7 +263,7 @@ class Kubernetes {
 
     try {
       content = await File(file).readAsString();
-    } on PathNotFoundException {
+    } on FileSystemException {
       final message = 'The path "$file" does not exist.';
       if (throwExceptions) throw Exception(message);
       _logger.severe(message);
@@ -537,7 +538,7 @@ class Kubernetes {
     if (![
       'client.authentication.k8s.io/v1',
       'client.authentication.k8s.io/v1beta1',
-      'client.authentication.k8s.io/v1alpha1'
+      'client.authentication.k8s.io/v1alpha1',
     ].contains(apiVersion)) {
       final message = 'Unrecognized user.exec.apiVersion: $apiVersion';
       if (throwExceptions) throw Exception(message);
@@ -610,8 +611,6 @@ class Kubernetes {
           clientKeyData: status['clientKeyData'].toString(),
         );
       }
-
-      return null;
     }
 
     final result = authInfoCopy != null
