@@ -15,6 +15,6 @@ export default {
     );
   },
   project: {
-    link: "https://github.com/fatihsever/k8s-dart",
+    link: "https://github.com/nopso/k8s-dart",
   },
 };
