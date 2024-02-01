@@ -61,7 +61,7 @@ Future<void> main(List<String> args) async {
           containers: <V1Container>[
             V1Container(
               name: 'nginx',
-              image: 'nginx:1.14.2',
+              image: 'nginx:1.25',
               ports: <V1ContainerPort>[
                 V1ContainerPort(
                   containerPort: 80,
@@ -74,13 +74,14 @@ Future<void> main(List<String> args) async {
     ),
   );
 
-  // // create a deployment with the appsV1Api
-  // final response5 = await appsV1Api.createNamespacedDeployment(
-  //   namespace: 'default',
-  //   body: newDeployment,
-  // );
-  // print('Create deployment status code: ${response5.statusCode}');
+  // create a deployment with the appsV1Api
+  final response5 = await appsV1Api.createNamespacedDeployment(
+    namespace: 'default',
+    body: newDeployment,
+  );
+  print('Create deployment status code: ${response5.statusCode}');
 
+  /*
   // create a deployment with the genericClient
   final response6 = await kubernetes.genericClient.create<V1Deployment>(
     group: 'apps',
@@ -91,6 +92,7 @@ Future<void> main(List<String> args) async {
     throwExceptions: true,
   );
   print('Deployment UID: ${response6.metadata!.uid}');
+  */
 
   exit(0);
 }
