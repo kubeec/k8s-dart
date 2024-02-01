@@ -9,7 +9,9 @@
 Dart client for the [Kubernetes](https://kubernetes.io/) API.
 
 > [!WARNING]
-Work in Progress. We keep working on it until we have all the features of the officially-supported [Kubernetes JavaScript client][kubernetes_javascript_client_link].
+> Work in Progress
+>
+> We keep working on it until we have all the features of the officially-supported [Kubernetes JavaScript client][kubernetes_javascript_client_link].
 
 Developed with 💙 by [Nopso][nopso_link]
 
