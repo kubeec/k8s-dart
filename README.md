@@ -6,7 +6,7 @@
 [![pub][pub_badge]][pub_link]
 
 ---
-Dart client for the [Kubernetes](https://kubernetes.io/) API.
+A Dart library for the [Kubernetes](https://kubernetes.io/) API.
 
 > [!WARNING]
 > Work in Progress
