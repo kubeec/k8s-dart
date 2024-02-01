@@ -4,6 +4,7 @@ version: 1.27.0+dev.1
 repository: https://github.com/nopso/k8s-dart
 issue_tracker: https://github.com/nopso/k8s-dart/issues
 documentation: https://k8s-dart.nopso.io/
+topics: [kubernetes]
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
