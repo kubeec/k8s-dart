@@ -34,12 +34,12 @@ For more information, please visit the [pub.dev](https://pub.dev/packages/k8s/in
 ## Quick Start 🚀
 List pods for all namespaces:
 ```dart
-import 'dart:io';
 import 'package:k8s/k8s.dart';
 
 Future<void> main() async {
   final kubernetes = Kubernetes();
   await kubernetes.initDefault();
+  final coreV1Api = kubernetes.client.getCoreV1Api();
   final pods = await coreV1Api.listPodForAllNamespaces();
   print('There are a total of ${pods.data?.items.length} in all namespaces.');
 }
