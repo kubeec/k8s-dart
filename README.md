@@ -41,7 +41,7 @@ Future<void> main() async {
   await kubernetes.initDefault();
   final coreV1Api = kubernetes.client.getCoreV1Api();
   final pods = await coreV1Api.listPodForAllNamespaces();
-  print('There are a total of ${pods.data?.items.length} in all namespaces.');
+  print('All namespaces have ${pods.data?.items.length} pods.');
 }
 ```
 
