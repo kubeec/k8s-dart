@@ -1,9 +1,8 @@
 name: k8s
-description: Kubernetes client library for Dart. Maintained by Nopso team.
-version: 1.27.0+dev.1
-repository: https://github.com/nopso/k8s-dart
-issue_tracker: https://github.com/nopso/k8s-dart/issues
-documentation: https://k8s-dart.nopso.io/
+description: Kubernetes client library for Dart. Maintained by Kubeec Team.
+version: 1.27.0+dev.2
+repository: https://github.com/kubeec/k8s-dart
+issue_tracker: https://github.com/kubeec/k8s-dart/issues
 topics: [kubernetes]
 
 environment:
@@ -13,7 +12,7 @@ dependencies:
   collection: ^1.18.0
   dio: "^5.4.0"
   json_annotation: ^4.8.1
-  kubeconfig: ^1.0.2
+  kubeconfig: ^1.0.3
   logging: ^1.2.0
   path: ^1.9.0
   socks5_proxy: ^1.0.4
@@ -27,4 +26,3 @@ dev_dependencies:
 screenshots:
   - description: Kubernetes Client for Dart logo
     path: assets/logo.webp
-

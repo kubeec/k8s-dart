@@ -6,6 +6,7 @@
 [![pub][pub_badge]][pub_link]
 
 ---
+
 A Dart library for the [Kubernetes](https://kubernetes.io/) API.
 
 > [!WARNING]
@@ -13,26 +14,30 @@ A Dart library for the [Kubernetes](https://kubernetes.io/) API.
 >
 > We keep working on it until we have all the features of the officially-supported [Kubernetes JavaScript client][kubernetes_javascript_client_link].
 
-Developed with 💙 by [Nopso][nopso_link]
-
-## Documentation 📝
-Please visit the [official documentation][docs_link].
+Developed with 💙 by Kubeec Team
 
 ## Installation 💻
+
 For quick start, please use this package as a library
 
 With Dart:
+
 ```sh
 dart pub add k8s
 ```
+
 With Flutter:
+
 ```sh
 flutter pub add k8s
 ```
+
 For more information, please visit the [pub.dev](https://pub.dev/packages/k8s/install)
 
 ## Quick Start 🚀
+
 List pods for all namespaces:
+
 ```dart
 import 'package:k8s/k8s.dart';
 
@@ -45,16 +50,14 @@ Future<void> main() async {
 }
 ```
 
-[k8s_dart_logo]: https://raw.githubusercontent.com/nopso/k8s-dart/main/assets/logo.svg
-[k8s_dart_link]: https://k8s-dart.nopso.io/
-[ci_badge]: https://github.com/nopso/k8s-dart/actions/workflows/ci.yml/badge.svg?branch=main
-[ci_link]: https://github.com/nopso/k8s-dart/actions/workflows/ci.yml
-[coverage_badge]: https://codecov.io/github/nopso/k8s-dart/graph/badge.svg?token=HJNIIKONS2
-[coverage_link]: https://codecov.io/github/nopso/k8s-dart
+[k8s_dart_logo]: https://raw.githubusercontent.com/kubeec/k8s-dart/main/assets/logo.svg
+[k8s_dart_link]: https://github.com/kubeec/k8s-dart
+[ci_badge]: https://github.com/kubeec/k8s-dart/actions/workflows/ci.yml/badge.svg?branch=main
+[ci_link]: https://github.com/kubeec/k8s-dart/actions/workflows/ci.yml
+[coverage_badge]: https://codecov.io/github/kubeec/k8s-dart/graph/badge.svg?token=HJNIIKONS2
+[coverage_link]: https://codecov.io/github/kubeec/k8s-dart
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT
 [pub_badge]: https://img.shields.io/pub/v/k8s
 [pub_link]: https://pub.dev/packages/k8s
-[nopso_link]: https://nopso.io/
-[docs_link]: https://k8s-dart.nopso.io/
 [kubernetes_javascript_client_link]: https://github.com/kubernetes-client/javascript
